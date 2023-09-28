@@ -40,7 +40,7 @@ The following should be the output when pytest with the verbose flag is run:
 pytest -v assignment4.py
 ```
 
-![test output](tests.png)
+![test output](tests_output.png)
 
 ### Dependency Management
 Each assignment will include a requirements.txt file that includes the python package requirements for the assignment. If you are using PyCharm it should automatically detect and install the dependencies when you create the virtual environment. Otherwise, [these instructions](https://www.jetbrains.com/help/pycharm/managing-dependencies.html#configure-requirements) will help you manually manage the requirements in PyCharm. If you are using something other than PyCharm, you can use the command line to manually install the packages from the requirements.txt file:
