@@ -13,9 +13,9 @@ In this programming assignment, you are going to complete the fourth step toward
 
 For this assignment, you will create a python file called `camera.py`, and within that file there will be a class called `OrthoCamera`. `OrthoCamera` needs to be implemented as detailed below. 
 
-Now that we are able to store representations of 3D meshes, we need to be able to manipulate them in our 3D scene. This will be accomplished by adding a `Transform` object as a member of the `Mesh` class. This member should automatically be populated with a default value that represents a position at the origin and no rotation. In otherwords, the default transformation matrix should be the identity matrix.
+Now that we are able to transform 3D meshes within world space, we need to be able to project them into a camera viewport for rendering. This will be accomplished by creating a `OrthoCamera` module that can apply transformations to world space vertices. This module will implement an orthographic camera projection.
 
-Like Assignment 2, this assignment will make use of numeric checks on known transforms to validate your solutions, as visual validation is not possible not possible until we have methods to shade objects in our raster renderer.
+Like the previous Assignments, this assignment will make use of numeric checks on known transforms to validate your solutions, as visual validation is not possible not possible until we have methods to shade objects in our raster renderer.
 
 Tip: Implementing the transformation from world space to camera space can be accomplished using the `apply_inverse_to_point` function of the camera's transform.
 
